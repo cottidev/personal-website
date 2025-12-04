@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Cotti</title>
+
+    <!-- Script -->
+    <script>
+      document.addEventListener("contextmenu", (event) =>
+        event.preventDefault()
+      );
+      document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+          return false;
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+      <div class="logo">
+        <a href="#Home">Cotti</a>
+      </div>
+      <dev class="links">
+        <!-- My Github -->
+        <a
+          href="https://github.com/cottidev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-github"></i>
+          <span>Github</span>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:aymane.berhoua@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
+
+        <!-- Linkedin-->
+        <a
+          href="https://www.linkedin.com/in/aymaneberhoua"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+          <span>Linkedin</span>
+        </a>
+      </dev>
+    </nav>
+    <main>
+      <!-- Hero -->
+      <section id="Home" class="hero">
+        <div class="description">
+          <h1>Hey!, I'm Aymane 👋</h1>
+          <br />
+          <p>
+            Also called Cotti :), a high school student who loves turning ideas
+            into real projects with code. I’m currently learning Python and
+            building small tools and websites to improve my skills step by step.
+            I enjoy studying, reading, and constantly learning new things that
+            push me forward. My goal is to become a software engineer and create
+            technology that actually solves problems in the real world.
+          </p>
+          <div class="navsec">
+            <!---->
+            <a href="#about">
+              <i class="fa-solid fa-face-smile"></i>
+              <span>About</span>
+            </a>
+            <!---->
+            <a href="#skills">
+              <i class="fa-solid fa-code"></i>
+              <span>Skills</span>
+            </a>
+            <!---->
+            <a href="#projects">
+              <i class="fa-solid fa-bolt"></i>
+              <span>Projects</span>
+            </a>
+            <!---->
+            <a href="#contact">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Contact</span>
+            </a>
+          </div>
+        </div>
+        <div class="profile">
+          <img id="mypic" src="profilepic.png" alt="cotti's pfp" />
+        </div>
+      </section>
+
+      <!-- About me -->
+      <h1 id="about" class="about_h1">About Me 👨‍💻</h1>
+      <section>
+        <div class="about">
+          <div class="catpic">
+            <img class="catcode" src="catcode.jpeg" alt="cat code pic :)" />
+          </div>
+          <p>
+            &lt;p&gt; <br />I’m a high school student passionate about coding,
+            problem-solving, and building things that actually work. <br />I’m
+            currently strengthening my skills in Python through Harvard’s
+            CS50P&CS50x and exploring how software engineering shapes the world
+            around us. I enjoy tackling complex ideas -> breaking them down ->
+            turning them into practical solutions. Whether it’s writing cleaner
+            code, learning new technologies, or improving my systems for
+            studying, I’m always focused on growth and long term progress. My
+            goal is to become a software engineer. For now, I’m building the
+            foundations, habits, and thinking skills, that will get me there.
+            <br />
+            &lt;/p&gt; <br /><br /><span id="hc">Happy coding !</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="myskills">
+        <h2>My Skills :)</h2>
+        <br />
+        <div class="text">
+          I'm still developing my skills, but for now, I'm comfortable with
+          Python and HTML. I'm working on improving my CSS skills, exploring
+          game development, and learning the C programming language. I'm
+          currently following CS50 courses like CS50x and CS50P (Python). I'm
+          still in high school, trying to balance school with my hobbies, but
+          I'm confident that I'll continue improving my skills and expanding my
+          knowledge in the future.
+        </div>
+
+        <div class="skills">
+          <div class="skill">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png"
+              alt="python"
+            />
+            <span>PYTHON</span>
+          </div>
+
+          <div class="skill">
+            <img
+              src="https://images.vexels.com/media/users/3/166383/isolated/preview/6024bc5746d7436c727825dc4fc23c22-html-programming-language-icon.png"
+              alt="html"
+            />
+            <span>HTML</span>
+          </div>
+
+          <div class="skill">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+              alt="CSS"
+            />
+            <span>CSS</span>
+          </div>
+
+          <div class="skill">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1086px-C_Programming_Language.svg.png"
+              alt="C"
+            />
+            <span>C lang</span>
+          </div>
+
+          <div class="skill">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Godot_icon.svg/2048px-Godot_icon.svg.png"
+            />
+            <span>GODOT</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects, soon I'll add more, maybe in anther personal website better than this one where I'm just learning nothing professional lol :)-->
+      <section id="projects" class="itch">
+        <div class="project-card">
+          <iframe
+            frameborder="0"
+            src="https://itch.io/embed/2548817"
+            width="367"
+            height="167"
+            ><a href="https://cottidev.itch.io/ninja-mario-html-version"
+              >Try my simple platformer game, I made when I was 14 :)</a
+            ></iframe
+          >
+          <p>Try my simple platformer game, I made when I was 14 :)</p>
+        </div>
+      </section>
+      <br />
+      <p id="smtg">Check my Github and Itch io for more projects!</p>
+      <!-- Contact -->
+      <section id="contact"></section>
+    </main>
+  </body>
+  <!-- Simple Footer -->
+  <footer>
+    <p>
+      <span id="yearname">© 2025 Aymane.</span> <br />
+      Made with ❤️ by cottidev <br />
+      nothing professional just basic learning :)
+    </p>
+    <p>
+      <a href="https://github.com/cottidev" target="_blank">GitHub</a>
+      <span id="random">|</span>
+      <a href="https://www.linkedin.com/in/aymaneberhoua" target="_blank"
+        >LinkedIn</a
+      >
+    </p>
+  </footer>
+</html>
+
+<!-- 
+Hey future me :)
+Remember this little website you made while learning. 
+keep pushing,keep coding, and never stop being curious. 
+-->

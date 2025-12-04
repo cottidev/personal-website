@@ -1,0 +1,321 @@
+:root {
+  --text-color: #e7f2ef;
+  --link-color: #a1c2bd;
+  --bg-color: #19183b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Poppins", "sans-serif";
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+/* NavBar */
+nav {
+  /* Main */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  height: 80px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Blur */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Required for Safari */
+
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* safari */
+}
+
+/* cotti */
+nav .logo a {
+  color: var(--text-color);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* nav links */
+nav .links a {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: 0.2s;
+}
+
+nav .links a:hover {
+  color: var(--link-color);
+}
+
+nav .links a:last-child {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border-radius: 50px;
+  padding: 7px 7px;
+}
+
+nav .links a:last-child:hover {
+  color: var(--bg-color);
+  background-color: var(--link-color);
+  border-radius: 50px;
+  padding: 7px 7px;
+}
+
+/* hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin: 50px 0;
+  margin-bottom: 100px;
+  align-items: center;
+  gap: 40px;
+  color: var(--text-color);
+}
+
+.hero .description {
+  flex: 5;
+}
+
+.hero .profile {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+
+.hero .description .navsec {
+  margin-top: 25px;
+}
+
+.hero .description h1 {
+  font-size: 50px;
+}
+
+.hero .description {
+  font-size: 18px;
+}
+
+.hero .description .navsec a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid var(--link-color);
+  border-radius: 50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
+
+.hero .description .navsec a:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  border: 2px solid var(--text-color);
+}
+
+#mypic {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+}
+
+/* ABOUT */
+.about,
+.about_h1 {
+  padding: 0 50px;
+  margin: 50px 0;
+  margin-bottom: 100px;
+  align-items: center;
+  gap: 40px;
+  color: var(--text-color);
+  display: flex;
+}
+
+.about_h1 {
+  margin-bottom: 25px;
+}
+
+.about #hc {
+  font-size: 24px;
+  color: greenyellow;
+  font-weight: 600;
+}
+
+.catcode {
+  border-radius: 50%;
+  display: flex;
+  width: 150px;
+}
+
+/* SKILLS */
+.myskills {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.myskills h2 {
+  text-align: center;
+  font-size: 35px;
+  color: var(--text-color);
+}
+
+.myskills .text {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.myskills .skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.myskills .skills .skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 10px 20px;
+  border: 2px solid var(--link-color);
+  border-radius: 50px;
+  margin: 12px;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Required for Safari */
+  transition: 0.2s;
+}
+
+.myskills .skills .skill:hover {
+  transform: scale(1.1);
+}
+
+/* images */
+
+.myskills .skills .skill img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* itch io */
+.itch {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.project-card {
+  background-color: #fff;
+  border: 2px solid var(--link-color);
+  min-height: 14em;
+  width: 40em;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  display: flex;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.project-card p {
+  padding: 10px 10px;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+  opacity: 0.9;
+}
+
+/* simple footer */
+footer {
+  background-color: var(--link-color);
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+footer a {
+  color: var(--bg-color);
+}
+
+#random {
+  color: red;
+}
+
+#yearname {
+  color: gray;
+}
+
+#smtg {
+  text-align: center;
+  color: var(--text-color);
+}
+
+/* responsive */
+@media (max-width: 850px) {
+  /* hero */
+  .hero .description h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 740px) {
+  /* hero */
+  .hero,
+  .about,
+  .project-card {
+    flex-direction: column-reverse;
+  }
+
+  .hero .profile #mypic {
+    /* NOT WORKING IDK WHY !!*/
+    /* EDIT: I FIXED IT :)*/
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* nav */
+  nav {
+    padding: 0 20px;
+  }
+
+  nav .links a span {
+    display: none;
+  }
+
+  nav .links a:last-child {
+    border-radius: 10px;
+    padding: 6px 7px;
+  }
+  nav .links a {
+    font-size: 24px;
+  }
+}
